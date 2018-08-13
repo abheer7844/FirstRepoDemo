@@ -14,6 +14,7 @@ public class Class1 {
 		ChromeDriverManager.getInstance().setup();
 		driver = new ChromeDriver();
 		driver.get("https://www.youtube.com");
+		System.out.println("");
 	}
 	
 	public static void driverClose() {
