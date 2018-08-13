@@ -21,7 +21,7 @@ public class Demo {
 	Thread thread1 = new Thread() {
 	    public void run() {
 	    	try {
-	    	    DesiredCapabilities caps = new DesiredCapabilities();
+	    		DesiredCapabilities caps = new DesiredCapabilities();
 	            caps.setCapability("automationName", "XCUITest");
 	            caps.setCapability("platformName", "iOS");
 	            caps.setCapability("platformVersion", "11.3");
@@ -52,7 +52,6 @@ public class Demo {
 	            caps.setCapability("newCommandTimeout", 60*30);	
 	            driver2 = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
 	            driver2.get("http://hva-wholesale-frontend-staging.s3-website.us-east-2.amazonaws.com/");
-			System.out.println(""):
 	    	}
 	    	catch(Exception e) {
 	    		System.err.println("Exception in Thread 2"+e);
